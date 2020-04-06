@@ -15,15 +15,10 @@ echo "$newCommit" > ./nix/nixpkgs.json
 
 # generate binstubs for cli tools
 bin/nix-binstubs \
-  awscli \
   cocoapods \
-  fastlane \
-  git-crypt \
-  git-lfs \
   jq \
   nodePackages.gulp-cli \
   nodejs \
-  xcpretty \
   yarn
 
 # Generate lockfile and nix file for ruby gems
